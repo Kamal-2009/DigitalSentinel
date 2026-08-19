@@ -21,12 +21,12 @@ export const Sidebar: React.FC = () => {
       {/* Unit Brand */}
       <div className="h-16 flex items-center px-4 border-b border-[#EDF0F4] gap-3 shrink-0">
         <img
-          src="/assets/digitalsentinel-emblem.png"
-          alt="DigitalSentinel"
-          className="w-9 h-9 rounded object-cover border border-[#D9E1EA] bg-[#F8FAFC] shadow-2xs"
+          src="/chd-police-logo.png"
+          alt="Chandigarh Police Logo"
+          className="w-9 h-9 rounded object-cover border border-[#D9E1EA] bg-white p-0.5 shadow-2xs"
         />
         <div className="min-w-0 flex-1">
-          <div className="font-bold text-[#172B4D] text-sm leading-snug truncate">DigitalSentinel</div>
+          <div className="font-bold text-[#172B4D] text-sm leading-snug truncate">Rakshak Setu</div>
           <div className="text-[11px] text-[#64748B] font-medium leading-none mt-0.5">Investigation Unit</div>
         </div>
       </div>

@@ -112,13 +112,13 @@ export interface EvidenceFile {
 // ----------------------------------------------------
 export const CASE_2847: CaseSummary = {
   id: '2847',
-  title: 'Investment Scam — Rajesh Verma',
-  subject: 'Rajesh Verma',
+  title: 'Investment Scam — User 1',
+  subject: 'User 1',
   type: 'Investment Scam',
   status: 'Active',
   priority: 'Critical',
   openedDate: '14 Aug 2026',
-  assignedIO: 'Amrit Singh',
+  assignedIO: 'Investigator 1',
   ioRole: 'Senior Inspector / Lead Investigator',
   ioStation: 'Sector 17, Chandigarh UT Police',
   fraudScore: 89,
@@ -136,7 +136,7 @@ export const CASE_2847: CaseSummary = {
   entities: [
     {
       id: 'ent_01',
-      name: 'Rajesh Verma',
+      name: 'User 1',
       type: 'PERSON',
       identifier: 'RAJESH-VERMA-992',
       role: 'PRIMARY SUBJECT / TARGET P1',
@@ -144,7 +144,7 @@ export const CASE_2847: CaseSummary = {
       riskLevel: 'CRITICAL',
       domain: 'NCRP',
       details: {
-        'Aliases': 'Rajesh Sharma, RajV',
+        'Aliases': 'User 1 Alias, User1_Alias',
         'National ID': 'XXXX-XXXX-4819',
         'Last Known Location': 'Sector 17, Chandigarh'
       }
@@ -161,7 +161,7 @@ export const CASE_2847: CaseSummary = {
       details: {
         'Carrier': 'Bharti Airtel UT',
         'IMSI': '404450981234567',
-        'Registered To': 'Rajesh Verma'
+        'Registered To': 'User 1'
       }
     },
     {
@@ -230,7 +230,7 @@ export const CASE_2847: CaseSummary = {
     {
       id: 'note_01',
       timestamp: '15 Aug 16:45 IST',
-      author: 'Insp. Amrit Singh (Lead IO)',
+      author: 'Insp. Investigator 1 (Lead IO)',
       text: 'Suspect coordinates swift financial transfers right after voice communication events. Subpoenaed bank records for HDFC account 4521 to freeze outflow and trace Layer 2 mule node 7832.'
     },
     {
@@ -327,7 +327,7 @@ export const CASE_2847_TIMELINE: TimelineEvent[] = [
     timeDisplay: '14:32',
     domain: 'BANK',
     title: 'Fraudulent IMPS Fund Transfer',
-    description: 'Unauthorized IMPS transfer of ₹48,000 credited to HDFC XXXXXXX4521 (Rajesh Verma). Part of ₹4,82,000 total scam flow.',
+    description: 'Unauthorized IMPS transfer of ₹48,000 credited to HDFC XXXXXXX4521 (User 1). Part of ₹4,82,000 total scam flow.',
     source: 'HDFC Core Banking Gateway',
     provenance: 'Source: Bank Batch #3, Row 991',
     isCritical: true,
@@ -335,7 +335,7 @@ export const CASE_2847_TIMELINE: TimelineEvent[] = [
       'Txn ID': 'IMPS608151432059',
       'Amount': '₹48,000 (Loss pool ₹4,82,000)',
       'Sender Acc': 'SBI XXXXXXX1190 (Victim)',
-      'Beneficiary Acc': 'HDFC XXXXXXX4521 (Rajesh Verma)',
+      'Beneficiary Acc': 'HDFC XXXXXXX4521 (User 1)',
       'Status': 'CLEARED / FLAGGED P1'
     }
   },
@@ -410,7 +410,7 @@ export const MONEY_TRAIL_NODES: FlowNode[] = [
     name: 'Layer 1 Primary Mule',
     type: 'MULE_L1',
     accountNo: 'HDFC XXXXXXX4521',
-    owner: 'Rajesh Verma',
+    owner: 'User 1',
     amount: '₹4,82,000 Received',
     riskScore: 91,
     status: 'Active Splitting',
@@ -489,12 +489,12 @@ export const ALL_CASES: CaseSummary[] = [
   {
     id: '2845',
     title: 'Mule Account Syndicate Ring',
-    subject: 'Priya Sharma',
+    subject: 'User 2',
     type: 'Mule Account',
     status: 'Active',
     priority: 'High',
     openedDate: '13 Aug 2026',
-    assignedIO: 'Amrit Singh',
+    assignedIO: 'Investigator 1',
     ioRole: 'Senior Inspector',
     ioStation: 'Sector 17, Chandigarh UT',
     fraudScore: 84,
@@ -555,7 +555,7 @@ export const AUDIT_LOGS: AuditLogEntry[] = [
   {
     id: 'evt_8f92a4bc719',
     timestamp: '2026-08-15 14:32:05 IST',
-    officerName: 'Insp. Amrit Singh',
+    officerName: 'Insp. Investigator 1',
     officerId: '1042',
     officerRole: 'Lead Investigator',
     officerStation: 'Sector 17, Chandigarh',
@@ -651,7 +651,7 @@ export const AUDIT_LOGS: AuditLogEntry[] = [
   {
     id: 'evt_3d55e2ff718',
     timestamp: '2026-08-15 13:59:02 IST',
-    officerName: 'Insp. Amrit Singh',
+    officerName: 'Insp. Investigator 1',
     officerId: '1042',
     officerRole: 'Lead Investigator',
     officerStation: 'Sector 17, Chandigarh',
@@ -734,7 +734,7 @@ export const SENTINEL_WATCH_ITEMS: SentinelWatchItem[] = [
   {
     id: 'watch_01',
     identifier: '+91 9812345678',
-    name: 'Rajesh Verma Handset SIM',
+    name: 'User 1 Handset SIM',
     streamType: 'CDR',
     threshold: 'Any Activity',
     riskScore: 92,
@@ -803,7 +803,7 @@ export const SYSTEM_USERS: UserOfficer[] = [
   {
     id: 'usr_1042',
     badgeId: 'ID: 1042',
-    name: 'Amrit Singh',
+    name: 'Investigator 1',
     rank: 'Senior Inspector',
     unit: 'Cyber Crime Investigation Unit',
     station: 'Sector 17, Chandigarh UT',

@@ -4,6 +4,7 @@ import { ToastProvider } from './components/common/Toast';
 import { AppShell } from './components/shell/AppShell';
 
 // Pages
+import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
 import { MyCases } from './pages/MyCases';
 import { CaseWorkspace } from './pages/CaseWorkspace';
@@ -23,9 +24,13 @@ export const App: React.FC = () => {
     <ToastProvider>
       <BrowserRouter>
         <Routes>
+          {/* Public Route */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
+
+          {/* Protected Routes (AppShell) */}
           <Route element={<AppShell />}>
             {/* Global Dashboard & Cases */}
-            <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/cases" element={<MyCases />} />
 

@@ -156,7 +156,7 @@ export const EvidenceReport: React.FC = () => {
           {/* Official Police Dossier Header */}
           <div className="text-center border-b-2 border-[#0B2340] pb-3">
             <div className="flex items-center justify-center gap-2 mb-1">
-              <img src="/assets/digitalsentinel-emblem.png" alt="Emblem" className="w-8 h-8 rounded" />
+              <img src="/chd-police-logo.png" alt="Chandigarh Police Logo" className="w-8 h-8 rounded bg-white p-0.5 object-contain" />
               <span className="font-bold text-sm tracking-wider text-[#0B2340] uppercase">
                 CHANDIGARH POLICE DEPARTMENT
               </span>

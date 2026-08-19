@@ -10,35 +10,34 @@ export default {
       colors: {
         // DigitalSentinel Core Tokens
         "ds-navy": "#0B2340",
-        "ds-blue": "#0B5CAB",
-        "ds-blue-hover": "#084A8B",
-        "ds-blue-soft": "#EFF6FF",
-        "ds-red": "#C8102E",
-        "ds-gold": "#D9AE00",
-        "ds-bg": "#F5F7FA",
-        "ds-white": "#ffffff",
-        "ds-border": "#D9E1EA",
-        "ds-ink": "#172B4D",
-        "ds-text": "#334155",
-        "ds-muted": "#64748B",
-        "ds-disabled": "#94A3B8",
+        "ds-blue": "#0A3254",
+        "ds-blue-hover": "#07233B",
+        "ds-blue-soft": "#E6F0F9",
+        "ds-red": "#D32F2F",
+        "ds-bg": "#FFFFFF",
+        "ds-white": "#FFFFFF",
+        "ds-border": "#E0E0E0",
+        "ds-ink": "#111827",
+        "ds-text": "#374151",
+        "ds-muted": "#6B7280",
+        "ds-disabled": "#9CA3AF",
 
         // Domain Specific
-        "cdr": "#0891B2",
-        "ipdr": "#7C3AED",
-        "bank": "#F97316",
-        "social": "#16A34A",
-        "ncrp": "#C8102E",
+        "cdr": "#0A3254",
+        "ipdr": "#0B5CAB",
+        "bank": "#D32F2F",
+        "social": "#1976D2",
+        "ncrp": "#B71C1C",
 
-        "cdr-cyan": "#0891B2",
-        "ipdr-purple": "#7C3AED",
-        "bank-orange": "#F97316",
+        "cdr-cyan": "#0A3254",
+        "ipdr-purple": "#0B5CAB",
+        "bank-orange": "#D32F2F",
 
         // Severity
-        "critical": "#DC2626",
-        "high": "#F97316",
-        "medium": "#EAB308",
-        "low": "#16A34A",
+        "critical": "#D32F2F",
+        "high": "#E53935",
+        "medium": "#1E88E5",
+        "low": "#64B5F6",
 
         // Material / Stitch token mappings
         "primary": "#0B5CAB",
@@ -114,7 +113,26 @@ export default {
         "margin-desktop": "1.5rem",
         "margin-mobile": "1rem",
         "container-max": "1600px",
-      }
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+      },
+      animation: {
+        blob: "blob 7s infinite",
+      },
     },
   },
   plugins: [],

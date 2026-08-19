@@ -4,29 +4,28 @@
 
 :root {
   --ds-navy: #0B2340;
-  --ds-blue: #0B5CAB;
-  --ds-blue-hover: #084A8B;
-  --ds-blue-soft: #EFF6FF;
-  --ds-red: #C8102E;
-  --ds-gold: #D9AE00;
-  --ds-bg: #F5F7FA;
-  --ds-white: #ffffff;
-  --ds-border: #D9E1EA;
-  --ds-ink: #172B4D;
-  --ds-text: #334155;
-  --ds-muted: #64748B;
-  --ds-disabled: #94A3B8;
+  --ds-blue: #0A3254;
+  --ds-blue-hover: #07233B;
+  --ds-blue-soft: #E6F0F9;
+  --ds-red: #D32F2F;
+  --ds-bg: #FFFFFF;
+  --ds-white: #FFFFFF;
+  --ds-border: #E0E0E0;
+  --ds-ink: #111827;
+  --ds-text: #374151;
+  --ds-muted: #6B7280;
+  --ds-disabled: #9CA3AF;
 
-  --ds-cdr: #0891B2;
-  --ds-ipdr: #7C3AED;
-  --ds-bank: #F97316;
-  --ds-social: #16A34A;
-  --ds-ncrp: #C8102E;
+  --ds-cdr: #0A3254;
+  --ds-ipdr: #0B5CAB;
+  --ds-bank: #D32F2F;
+  --ds-social: #1976D2;
+  --ds-ncrp: #B71C1C;
 
-  --ds-critical: #DC2626;
-  --ds-high: #F97316;
-  --ds-medium: #EAB308;
-  --ds-low: #16A34A;
+  --ds-critical: #D32F2F;
+  --ds-high: #E53935;
+  --ds-medium: #1E88E5;
+  --ds-low: #64B5F6;
 }
 
 * {
@@ -41,7 +40,7 @@ html, body {
   background: var(--ds-bg);
   color: var(--ds-ink);
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .material-symbols-outlined {
@@ -140,4 +139,8 @@ html, body {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
 }

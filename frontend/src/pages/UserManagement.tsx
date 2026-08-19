@@ -63,7 +63,7 @@ export const UserManagement: React.FC = () => {
             User Management
           </h1>
           <p className="text-sm text-[#424751] max-w-2xl">
-            Manage department personnel, role-based access credentials, and multi-factor authorization for DigitalSentinel.
+            Manage department personnel, role-based access credentials, and multi-factor authorization for Rakshak Setu.
           </p>
         </div>
 
@@ -205,7 +205,7 @@ export const UserManagement: React.FC = () => {
         isOpen={isAddUserModalOpen}
         onClose={() => setIsAddUserModalOpen(false)}
         title="Provision Department Personnel"
-        subtitle="Grant role-based credentials for DigitalSentinel platform access."
+        subtitle="Grant role-based credentials for Rakshak Setu platform access."
         icon="person_add"
         footer={
           <>

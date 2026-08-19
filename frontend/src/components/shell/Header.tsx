@@ -44,12 +44,12 @@ export const Header: React.FC = () => {
           onClick={() => navigate('/dashboard')}
           className="flex items-center gap-2.5 hover:opacity-90 transition-opacity mr-1"
         >
-          <img
-            src="/assets/digitalsentinel-emblem.png"
-            alt="DigitalSentinel Emblem"
+          <img 
+            src="/chd-police-logo.png" 
+            alt="Chandigarh Police Logo"
             className="w-8 h-8 rounded object-cover bg-white p-0.5 border border-white/20"
           />
-          <span className="font-bold text-xl tracking-tight text-white">DigitalSentinel</span>
+          <span className="font-bold text-xl tracking-tight text-white">Rakshak Setu</span>
         </button>
 
         <div className="h-5 w-px bg-white/25 mx-4 hidden sm:block" />
